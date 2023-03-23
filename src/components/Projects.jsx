@@ -12,10 +12,10 @@ import {
 } from "mdb-react-ui-kit";
 import React from "react";
 import styled from "styled-components";
-import ecommerce from "../assets/Screenshot (2).png";
-import fitness from "../assets/Screenshot (12).png";
-import tourapp from "../assets/Screenshot (11).png";
-import foodapp from "../assets/Screenshot (10).png";
+import ecommerce from "../assets/ecom.png";
+import fitness from "../assets/gym.png";
+import tourapp from "../assets/tour.png";
+import foodapp from "../assets/food.png";
 import react from "../assets/react.png";
 import redux from "../assets/redux.png";
 import html from "../assets/html5.png";

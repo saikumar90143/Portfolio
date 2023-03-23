@@ -9,7 +9,7 @@ import {
 import React from "react";
 import styled from "styled-components";
 import TypeWriterEffect from "react-typewriter-effect";
-import dsk from "../assets/IMG_20221204_192112.jpg";
+import dsk from "../assets/user.jpg";
 const Hero = () => {
   return (
     <Wrapper id="home" className="mb-5">
@@ -23,7 +23,7 @@ const Hero = () => {
               </h1>
             </div>
 
-            <div className="text-start d-flex fs-5">
+            <div className="text-container d-flex fs-5">
               <h4>and I am &nbsp;</h4>
               <span className="animate-text">
                 {" "}
@@ -110,7 +110,7 @@ const Wrapper = styled.section`
       background-size: cover;
       object-fit: cover;
       transition: all 0.5s ease-out;
-      border-radius: 10px;
+     border-radius: 10px;
     }
   }
 
@@ -118,13 +118,13 @@ const Wrapper = styled.section`
     .btn {
       width: 100%;
     }
-    h4 {
-      font-size: 1rem !important;
+    h4{
+      font-size: 1rem!important;
     }
-    .animate-text {
-      h1 {
-        font-size: 1rem !important;
-      }
+    .animate-text{
+h1{
+  font-size: 1rem!important;
+}
     }
   }
 `;

@@ -1,7 +1,7 @@
 import { MDBCardImage, MDBCol, MDBContainer, MDBRow } from "mdb-react-ui-kit";
 import React from "react";
 import styled from "styled-components";
-import developer from "../assets/developer.webp";
+import developer from "../assets/dev.webp";
 const Aboutme = () => {
   return (
     <Wrapper id="about">
