@@ -66,6 +66,7 @@ const Projects = () => {
                       src={project?.image}
                       alt={project?.title}
                       fluid
+                      loading='lazy'
                     />
                   </MDBCardHeader>
                   <MDBCardBody className="text-start">

@@ -81,7 +81,7 @@ const Hero = () => {
             className="d-flex flex-column align-items-center text-start"
           >
             <div className="image">
-              <MDBCardImage src={dsk} alt="saikumar" fluid />
+              <MDBCardImage src={dsk} alt="saikumar" fluid loading='lazy'/>
             </div>
           </MDBCol>
         </MDBRow>

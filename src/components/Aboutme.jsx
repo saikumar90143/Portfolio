@@ -12,7 +12,7 @@ const Aboutme = () => {
           </h2>
           {/* image */}
           <MDBCol size="12" md="6" className="mb-5">
-            <MDBCardImage src={developer} alt="developer" fluid />
+            <MDBCardImage src={developer} alt="developer" fluid loading='lazy' />
           </MDBCol>
           {/* content */}
           <MDBCol size="12" md="6" className="about text-start align-items-center d-flex">

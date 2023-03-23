@@ -57,6 +57,7 @@ const Skills = () => {
                     alt={skill?.title}
                     fluid
                     title={skill?.title}
+                    loading='lazy'
                   />
                 </div>
                 <b className="text-center text-capitalize">{skill.title}</b>
