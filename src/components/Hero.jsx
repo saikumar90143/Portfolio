@@ -1,6 +1,5 @@
 import {
   MDBBtn,
-  MDBCardImage,
   MDBCol,
   MDBContainer,
   MDBIcon,
@@ -10,6 +9,7 @@ import React from "react";
 import styled from "styled-components";
 import TypeWriterEffect from "react-typewriter-effect";
 import dsk from "../assets/user.jpg";
+import {LazyLoadImage} from 'react-lazy-load-image-component'
 const Hero = () => {
   return (
     <Wrapper id="home" className="mb-5">
@@ -81,7 +81,7 @@ const Hero = () => {
             className="d-flex flex-column align-items-center text-start"
           >
             <div className="image">
-              <MDBCardImage src={dsk} alt="saikumar" fluid loading='lazy'/>
+              <LazyLoadImage src={dsk} alt="saikumar" fluid loading='lazy'/>
             </div>
           </MDBCol>
         </MDBRow>
