@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
 
+import React, { useEffect, useState ,Suspense} from 'react'
+
+import './App.css'
+import Aboutme from './components/Aboutme'
+import ContactMe from './components/ContactMe'
+import Header from './components/Header'
+import Hero from './components/Hero'
+import Loader from './components/Loader'
+import Skills from './components/Skills'
+import WhatIDo from './components/WhatIDo'
+const Projects = React.lazy(()=>import ('./components/Projects' ))  
 function App() {
+  window.onload= function () {
+    window.scrollTo(0,0);
+};
+  const [loading,setLoading]=useState(false)
+    useEffect(()=>{
+setTimeout(()=>{
+   setLoading(true)
+},2500)
+return()=>{
+  setLoading(false)
+}
+    },[window.onloadstart])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {!loading?(<Loader/>):(
+        <>
+        <Header/>
+        
+     <Hero/>
+     <Aboutme/>
+     <WhatIDo/>
+     <Skills/>
+     <Suspense fallback={<Loader/>}>
+
+     <Projects/>
+     </Suspense>
+     <ContactMe/>
+        </>
+      )}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
