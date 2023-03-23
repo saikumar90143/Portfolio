@@ -93,6 +93,7 @@ const Header = () => {
 };
 
 const Wrapper = styled.section`
+
   background-color: white;
   z-index: 999;
   nav {

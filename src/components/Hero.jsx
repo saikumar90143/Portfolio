@@ -8,7 +8,7 @@ import {
 import React from "react";
 import styled from "styled-components";
 import TypeWriterEffect from "react-typewriter-effect";
-import dsk from "../assets/user.webp";
+import dsk from "../assets/user.jpg";
 import {LazyLoadImage} from 'react-lazy-load-image-component'
 const Hero = () => {
   return (
@@ -107,6 +107,7 @@ const Wrapper = styled.section`
       width: 100%;
       height: 100%;
       /* border-radius: 50%; */
+      rotate: 90deg;
       background-size: cover;
       object-fit: cover;
       transition: all 0.5s ease-out;

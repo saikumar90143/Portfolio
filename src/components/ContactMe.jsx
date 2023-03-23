@@ -59,6 +59,7 @@ const ContactMe = () => {
 };
 
 const Wrapper = styled.section`
+
   h2 {
     text-decoration: underline;
     text-decoration-color: var(--dark);
