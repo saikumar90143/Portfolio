@@ -8,7 +8,7 @@ import {
 import React from "react";
 import styled from "styled-components";
 import TypeWriterEffect from "react-typewriter-effect";
-import dsk from "../assets/user.jpg";
+import dsk from "../assets/user.webp";
 import {LazyLoadImage} from 'react-lazy-load-image-component'
 const Hero = () => {
   return (
@@ -81,7 +81,7 @@ const Hero = () => {
             className="d-flex flex-column align-items-center text-start"
           >
             <div className="image">
-              <LazyLoadImage src={dsk} alt="saikumar" fluid loading='lazy'/>
+           <LazyLoadImage src={dsk} alt='user' loading='lazy'/>
             </div>
           </MDBCol>
         </MDBRow>
