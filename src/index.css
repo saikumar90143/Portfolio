@@ -23,8 +23,8 @@ body {
  scroll-snap-align: y;
   min-width: 320px;
  cursor: pointer;
-overflow-x: hidden;
-max-width: 100%;
+overflow-x: hidden!important;
+max-width: 100%!important;
     font-family: Roboto, Helvetica, Arial, sans-serif;
   
 }
