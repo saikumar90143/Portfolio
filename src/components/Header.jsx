@@ -17,7 +17,6 @@ const Header = () => {
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
     const el = headerRef.current;
-    const size = window.matchMedia("(maxWidth:5em)");
 
     gsap.to(el, {
       position: "fixed",
@@ -72,7 +71,7 @@ const Header = () => {
                 </MDBNavbarItem>
                 <MDBNavbarItem>
                   <MDBNavbarLink
-                    href="https://drive.google.com/file/d/1l-YiLn6jxt5DL1RhCFEVdG_r5E5OvuN8/view?usp=share_link"
+                    href="https://drive.google.com/file/d/1ou5Eib1dvGtTT3g4kRhCgs9mf3-z3XEg/view?usp=share_link"
                     style={{
                       border: "1px solid var(--light)",
                       borderRadius: "5px",
@@ -93,7 +92,6 @@ const Header = () => {
 };
 
 const Wrapper = styled.section`
-
   background-color: white;
   z-index: 999;
   nav {

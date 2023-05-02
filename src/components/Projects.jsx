@@ -30,6 +30,7 @@ const Projects = () => {
       image: foodapp,
       title: "Foodies App",
       desc: "A UI for foodies app created using ReactJS and Redux-toolkit",
+      sourcecode:"https://github.com/saikumar90143/restaruant-app-client",
       techStack: [react, redux, sass, html, api],
     },
     {
@@ -37,18 +38,23 @@ const Projects = () => {
       title: "Tour App",
       stack: "(Mern Stack Project)",
       desc: "A Tourist Application where they can store there wonder moments.,Oauth,User Authentication,JWT etc",
+      sourcecode:'https://github.com/saikumar90143/TourApp-frontend',
+      seelive:'https://tourapp-krkk.onrender.com',
       techStack: [react, redux, sass, nodejs, mongodb, express],
     },
     {
       image: fitness,
       title: "Fitness Freak",
       desc: "This is a fitness website designed using react and MDB framework and added some cool animations using gsap scroll trigger",
+      sourcecode:'https://github.com/saikumar90143/FitnessApp',
+      seelive:"https://fitnessapp-dbb3.onrender.com",
       techStack: [react, sass, html],
     },
     {
       image: ecommerce,
       title: "Ecommerce Website",
       desc: "This is an ecommerce website designed using react and fetch products through api and manage products to add to cart using redux",
+     seelive:"https://busystore-ecom-42f9a.web.app/",
       techStack: [react, sass, html, redux, api],
     },
   ];
@@ -88,9 +94,12 @@ const Projects = () => {
                           className="arrow"
                         />
                       </MDBBtn>
+                      <a href={project.sourcecode}>
+                      
                       <MDBBtn>
                         Source Code <MDBIcon fab icon="github" />
                       </MDBBtn>
+                      </a>
                     </div>
                   </MDBCardBody>
                   <MDBCardFooter>
